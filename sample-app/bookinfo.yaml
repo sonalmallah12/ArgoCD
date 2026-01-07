@@ -58,7 +58,7 @@ metadata:
     app: details
     version: v1
 spec:
-  replicas: 7 
+  replicas: 4 
   selector:
     matchLabels:
       app: details
