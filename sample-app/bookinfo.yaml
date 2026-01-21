@@ -58,7 +58,7 @@ metadata:
     app: details
     version: v1
 spec:
-  replicas: 5 
+  replicas: 6 
   selector:
     matchLabels:
       app: details
@@ -72,7 +72,7 @@ spec:
       serviceAccountName: bookinfo-details
       containers:
       - name: details
-        image: docker.io/istio/examples-bookinfo-details-v1:1.17.2
+        image: docker.io/istio/examples-bookinfo-details-v1:1.16.2
         imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 9080
