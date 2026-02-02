@@ -1,0 +1,14 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Workflow
+metadata:
+  generateName: argocd-hello-
+  namespace: argo
+spec:
+  entrypoint: hello
+  templates:
+  - name: hello
+    container:
+      image: alpine
+      command: ["sh", "-c"]
+      args: ["echo Hello from Argo CD → Argo Workflows"]
+
